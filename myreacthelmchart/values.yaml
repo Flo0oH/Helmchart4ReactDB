@@ -1,0 +1,17 @@
+postgresql:
+  enabled: true
+  postgresUser: postgres
+  postgresPassword: postgres
+  postgresDatabase: mydb
+
+web:
+  enabled: true
+  name: my-web
+  image:
+    repository: my-web
+    tag: latest
+
+loadBalancer:
+  enabled: true
+  name: my-lb
+  servicePort: 80
